@@ -1,12 +1,9 @@
 body {  /* setting size width/height for body doesn't work well in legacy */
-/*	margin-left: auto;
-	margin-right: auto;
-	max-width: 640px;*/
     background-color: #33CCFF;
 }
 
 .pageWrapper {
-	max-width:640px;
+	max-width:1000px;
 	margin: 0 auto; /* this is magic */
 	overflow:hidden;
 }
@@ -31,6 +28,10 @@ nav {
 	width: 100%;
 }
 
+@keyframes lift{
+	100%	{border-radius: 10px; box-shadow: 10px 10px 5px;}
+}
+
 .articleLeft {
 	border-radius: 5px 0px 0px 5px;
 	float: left;
@@ -38,6 +39,13 @@ nav {
 	height: 400px;
 	background-color: white;
 	margin-right: 2%;
+	margin-bottom: 10px;
+}
+
+.articleLeft:hover {
+	animation-name: lift;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
 }
 
 .articleMiddle {
@@ -46,6 +54,13 @@ nav {
 	height: 400px;
 	background-color: white;
 	margin-right: 2%;
+	margin-bottom: 10px;
+}
+
+.articleMiddle:hover {
+	animation-name: lift;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
 }
 
 .articleRight {
@@ -54,10 +69,18 @@ nav {
 	width: 32%;
 	height: 400px;
 	background-color: white;
+	margin-bottom: 10px;
+}
+
+.articleRight:hover {
+	animation-name: lift;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
 }
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen 
+<<<<<<< HEAD
 and (min-device-width : 320px) 
 and (max-device-width : 480px) {
 	.articleLeft {
@@ -79,7 +102,8 @@ and (max-device-width : 480px) {
 }
  
 /* Smartphones (portrait and landscape) ----------- 
-@media only screen and (min-width : 320px) and (max-width : 480px) {
+@media only screen and (min-width : 320px) and (max-width : 480px) { {
+
 	.articleLeft {
 		border-radius: 5px 5px 0px 0px;
 		width: 100%;
