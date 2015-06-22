@@ -1,8 +1,13 @@
-body {
-	margin-left: auto;
+body {  /* setting size width/height for body doesn't work well in legacy */
+/*	margin-left: auto;
 	margin-right: auto;
-	max-width: 640px;
+	max-width: 640px;*/
     background-color: #33CCFF;
+}
+
+.pageWrapper {
+	width:640px;
+	margin: 0 auto; /* this is magic */
 }
 
 nav {
@@ -81,3 +86,11 @@ footer {
 	width: 100%;
 	height: 200px;
 }
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+	/* Styles */
+}
+
