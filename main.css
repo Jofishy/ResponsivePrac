@@ -23,13 +23,17 @@ nav {
  	background: linear-gradient(black, #33CCFF); /* Standard syntax */
  	margin-bottom: 20px;
 }
-
+article {
+	box-shadow: 0 0 25px;
+	cursor:pointer;
+}
 .mainContent {
 	width: 100%;
 }
 
 @keyframes lift{
-	100%	{border-radius: 10px; box-shadow: 10px 10px 5px;}
+	  0%    {box-shadow:none;}
+	100%	{box-shadow: 0px 0px 25px red;}
 }
 
 .articleLeft {
@@ -42,10 +46,11 @@ nav {
 	margin-bottom: 10px;
 }
 
-.articleLeft:hover {
-	animation-name: lift;
-	animation-duration: 1s;
-	animation-fill-mode: forwards;
+.articleLeft:hover, .articleMiddle:hover, .articleRight:hover {
+	/*animation: lift 3s forwards linear alternate infinite;*/
+	/*animation-duration: 1s;
+	animation-fill-mode: forwards;*/
+	/*border-radius: 10px;*/
 }
 
 .articleMiddle {
@@ -57,11 +62,11 @@ nav {
 	margin-bottom: 10px;
 }
 
-.articleMiddle:hover {
+/*.articleMiddle:hover {
 	animation-name: lift;
 	animation-duration: 1s;
 	animation-fill-mode: forwards;
-}
+}*/
 
 .articleRight {
 	border-radius: 0px 5px 5px 0px;
@@ -72,15 +77,14 @@ nav {
 	margin-bottom: 10px;
 }
 
-.articleRight:hover {
+/*.articleRight:hover {
 	animation-name: lift;
 	animation-duration: 1s;
 	animation-fill-mode: forwards;
-}
+}*/
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen 
-<<<<<<< HEAD
 and (min-device-width : 320px) 
 and (max-device-width : 480px) {
 	.articleLeft {
