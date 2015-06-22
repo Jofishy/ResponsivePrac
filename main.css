@@ -8,6 +8,7 @@ body {  /* setting size width/height for body doesn't work well in legacy */
 .pageWrapper {
 	width:640px;
 	margin: 0 auto; /* this is magic */
+	overflow:hidden;
 }
 
 nav {
