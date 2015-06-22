@@ -1,0 +1,83 @@
+body {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 640px;
+    background-color: #33CCFF;
+}
+
+nav {
+	margin-top: 30px;
+	border-radius: 5px 5px 0px 0px;
+	max-width: 100%;
+	height: 40px;
+    background-color: white;
+    text-align: center;
+}
+
+.banner {
+	width: 100%;
+	height: 300px;
+ 	background: linear-gradient(black, #33CCFF); /* Standard syntax */
+ 	margin-bottom: 20px;
+}
+
+.mainContent {
+	width: 100%;
+}
+
+.articleLeft {
+	border-radius: 5px 0px 0px 5px;
+	float: left;
+	width: 32%;
+	height: 400px;
+	background-color: white;
+	margin-right: 2%;
+}
+
+.articleMiddle {
+	float: left;
+	width: 32%;
+	height: 400px;
+	background-color: white;
+	margin-right: 2%;
+}
+
+.articleRight {
+	border-radius: 0px 5px 5px 0px;
+	float: left;
+	width: 32%;
+	height: 400px;
+	background-color: white;
+}
+
+@media only screen and (max-width: 500px) {
+	.articleLeft {
+		float: left;
+		width: 100%;
+		height: 400px;
+		background-color: white;
+		margin-bottom: 30px;
+	}
+
+	.articleMiddle {
+		float: left;
+		width: 100%;
+		height: 400px;
+		background-color: white;
+		margin-bottom: 30px;
+	}
+
+	.articleRight {
+		float: left;
+		width: 100%;
+		height: 400px;
+		background-color: white;
+		margin-bottom: 30px;
+	}
+    
+}
+
+footer {
+	width: 100%;
+	height: 200px;
+}
