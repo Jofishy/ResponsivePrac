@@ -3,7 +3,7 @@ body {  /* setting size width/height for body doesn't work well in legacy */
 }
 
 .pageWrapper {
-	max-width:640px;
+	max-width:1000px;
 	margin: 0 auto; /* this is magic */
 	overflow:hidden;
 }
@@ -29,7 +29,7 @@ nav {
 }
 
 @keyframes lift{
-	100%	{border-radius: 10px; box-shadow: 10px 10px 5px;}
+	100%	{border-radius: 10px; box-shadow: 10px 10px 5px; width: 30%;}
 }
 
 .articleLeft {
@@ -39,6 +39,7 @@ nav {
 	height: 400px;
 	background-color: white;
 	margin-right: 2%;
+	margin-bottom: 10px;
 }
 
 .articleLeft:hover {
@@ -53,6 +54,7 @@ nav {
 	height: 400px;
 	background-color: white;
 	margin-right: 2%;
+	margin-bottom: 10px;
 }
 
 .articleMiddle:hover {
@@ -67,6 +69,7 @@ nav {
 	width: 32%;
 	height: 400px;
 	background-color: white;
+	margin-bottom: 10px;
 }
 
 .articleRight:hover {
