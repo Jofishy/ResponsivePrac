@@ -6,7 +6,7 @@ body {  /* setting size width/height for body doesn't work well in legacy */
 }
 
 .pageWrapper {
-	width:640px;
+	max-width:640px;
 	margin: 0 auto; /* this is magic */
 	overflow:hidden;
 }
@@ -56,28 +56,22 @@ nav {
 	background-color: white;
 }
 
-@media only screen and (max-width: 500px) {
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-width : 320px) and (max-width : 480px) {
 	.articleLeft {
-		float: left;
+		border-radius: 5px 5px 0px 0px;
 		width: 100%;
-		height: 400px;
-		background-color: white;
 		margin-bottom: 30px;
 	}
 
 	.articleMiddle {
-		float: left;
 		width: 100%;
-		height: 400px;
-		background-color: white;
 		margin-bottom: 30px;
 	}
 
 	.articleRight {
-		float: left;
+		border-radius: 0px 0px 5px 5px;
 		width: 100%;
-		height: 400px;
-		background-color: white;
 		margin-bottom: 30px;
 	}
     
@@ -87,11 +81,3 @@ footer {
 	width: 100%;
 	height: 200px;
 }
-
-/* Smartphones (portrait and landscape) ----------- */
-@media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 480px) {
-	/* Styles */
-}
-
