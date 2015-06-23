@@ -8,6 +8,14 @@ body {  /* setting size width/height for body doesn't work well in legacy */
 	overflow:hidden;
 }
 
+p {
+	color: white;
+}
+h1 {
+	color: red;
+	font-size: 65px;
+}
+
 nav {
 	margin-top: 30px;
 	border-radius: 5px 5px 0px 0px;
@@ -23,6 +31,24 @@ nav {
  	background: linear-gradient(black, #33CCFF); /* Standard syntax */
  	margin-bottom: 20px;
 }
+
+.bannerText {
+	width: 700px;
+	padding-top:30px;
+	margin: 0 auto;
+}
+
+.instructions {
+	font-weight: bold;
+	font-size: 20px;
+	margin-bottom: 30px;
+}
+
+.notify {
+	margin: 0 auto;
+	width: 40%;
+}
+
 article {
 	box-shadow: 0 0 25px;
 	cursor:pointer;
