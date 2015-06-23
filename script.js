@@ -20,5 +20,4 @@ window.onload = function(){
 			console.log('i = \r' + i); //debug value of i
 			liftArticle(i);
 		});
-	}
-}
+
