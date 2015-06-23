@@ -1,6 +1,9 @@
 var entry = [],
 	right = ["articleRight", "articleMiddle", "articleLeft"],
-    combo = [];
+    combo = [],
+    winnerText = $('.notify');
+
+winnerText.hide();
 
 $('article').click(function(e){
 	var chk = $(this).hasClass("sunk"),
@@ -13,10 +16,11 @@ $('article').click(function(e){
 	}
 	combo.plus(cls);
 	console.log(entry);
-	console.log(winner);
+	console.log("winner: \r" + winner);
 });
 
 combo.plus = function(t) {
+	winner = false;
 	entry.push(t);
 	if (entry.length > 2) {
 		combo.check();
@@ -27,8 +31,10 @@ combo.check = function() {
 	//  validate the combo or reset the array 
 	for (i=0; i<3; i++){
 		if (entry[i] != right[i]){
+			winnerText.hide();
 			return;
 		}
 	}
 	winner = true;
+	winnerText.show();
 }
