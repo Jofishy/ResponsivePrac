@@ -24,6 +24,7 @@ combo.plus = function(t) {
 	entry.push(t);
 	if (entry.length > 2) {
 		combo.check();
+		$('.notepad').append("<p>" + entry + "</p>");
 		entry.length = 0;
 	}
 }
@@ -32,9 +33,11 @@ combo.check = function() {
 	for (i=0; i<3; i++){
 		if (entry[i] != right[i]){
 			winnerText.hide();
+			$('.notepad').show();
 			return;
 		}
 	}
 	winner = true;
 	winnerText.show();
+	$('.notepad').hide();
 }
