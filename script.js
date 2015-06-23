@@ -18,6 +18,10 @@ window.onload = function(){
 	for (var i = 0 ; i < art.length ; i++ ){
 		art[i].addEventListener('click', function(i){
 			console.log('i = \r' + i); //debug value of i
+			var e = instanceOfMouseEvent.region;
+			console.log("target = \r" + e);
 			liftArticle(i);
 		});
 
+	}
+}

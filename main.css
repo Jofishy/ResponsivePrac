@@ -27,6 +27,9 @@ article {
 	box-shadow: 0 0 25px;
 	cursor:pointer;
 }
+article.sunk {
+	box-shadow: inset 0 0 25px;
+}
 .mainContent {
 	width: 100%;
 }
@@ -36,10 +39,10 @@ article {
 	100%	{box-shadow: 0px 0px 25px red;}
 }
 
-#articleLeft {
+.articleLeft, .articleRight, .articleMiddle {
 	border-radius: 5px 0px 0px 5px;
 	float: left;
-	width: 32%;
+	width: 31%;
 	height: 400px;
 	background-color: white;
 	margin-right: 2%;
@@ -47,43 +50,10 @@ article {
 }
 
 #articleLeft:hover, #articleMiddle:hover, #articleRight:hover {
-	/*animation: lift 3s forwards linear alternate infinite;*/
-	/*animation-duration: 1s;
-	animation-fill-mode: forwards;*/
-	/*border-radius: 10px;*/
+	/* could be fun*/
 }
 
-#articleMiddle {
-	float: left;
-	width: 32%;
-	height: 400px;
-	background-color: white;
-	margin-right: 2%;
-	margin-bottom: 10px;
-}
-
-/*.articleMiddle:hover {
-	animation-name: lift;
-	animation-duration: 1s;
-	animation-fill-mode: forwards;
-}*/
-
-#articleRight {
-	border-radius: 0px 5px 5px 0px;
-	float: left;
-	width: 32%;
-	height: 400px;
-	background-color: white;
-	margin-bottom: 10px;
-}
-
-/*.articleRight:hover {
-	animation-name: lift;
-	animation-duration: 1s;
-	animation-fill-mode: forwards;
-}*/
-
-/* Smartphones (portrait and landscape) ----------- */
+/* Smartphones (portrait and landscape) ----------- 
 @media only screen 
 and (min-device-width : 320px) 
 and (max-device-width : 480px) {
