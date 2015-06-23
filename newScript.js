@@ -1,4 +1,5 @@
 var entry = [],
+	right = ["articleRight", "articleMiddle", "articleLeft"],
     combo = [];
 
 $('article').click(function(e){
@@ -12,14 +13,22 @@ $('article').click(function(e){
 	}
 	combo.plus(cls);
 	console.log(entry);
+	console.log(winner);
 });
 
 combo.plus = function(t) {
 	entry.push(t);
-	if (entry.length == 3) {
+	if (entry.length > 2) {
 		combo.check();
+		entry.length = 0;
 	}
 }
 combo.check = function() {
 	//  validate the combo or reset the array 
+	for (i=0; i<3; i++){
+		if (entry[i] != right[i]){
+			return;
+		}
+	}
+	winner = true;
 }
