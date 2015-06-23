@@ -36,7 +36,7 @@ article {
 	100%	{box-shadow: 0px 0px 25px red;}
 }
 
-.articleLeft {
+#articleLeft {
 	border-radius: 5px 0px 0px 5px;
 	float: left;
 	width: 32%;
@@ -46,14 +46,14 @@ article {
 	margin-bottom: 10px;
 }
 
-.articleLeft:hover, .articleMiddle:hover, .articleRight:hover {
+#articleLeft:hover, #articleMiddle:hover, #articleRight:hover {
 	/*animation: lift 3s forwards linear alternate infinite;*/
 	/*animation-duration: 1s;
 	animation-fill-mode: forwards;*/
 	/*border-radius: 10px;*/
 }
 
-.articleMiddle {
+#articleMiddle {
 	float: left;
 	width: 32%;
 	height: 400px;
@@ -68,7 +68,7 @@ article {
 	animation-fill-mode: forwards;
 }*/
 
-.articleRight {
+#articleRight {
 	border-radius: 0px 5px 5px 0px;
 	float: left;
 	width: 32%;
@@ -87,18 +87,18 @@ article {
 @media only screen 
 and (min-device-width : 320px) 
 and (max-device-width : 480px) {
-	.articleLeft {
+	#articleLeft {
 		border-radius: 5px 5px 0px 0px;
 		width: 100%;
 		margin-bottom: 30px;
 	}
 
-	.articleMiddle {
+	#articleMiddle {
 		width: 100%;
 		margin-bottom: 30px;
 	}
 
-	.articleRight {
+	#articleRight {
 		border-radius: 0px 0px 5px 5px;
 		width: 100%;
 		margin-bottom: 30px;
