@@ -6,3 +6,17 @@ for ( i in art ) {
 	att.value = "click me (~ '.' )~"; 
 	art[i].setAttributeNode(att); 
 }
+
+function liftArticle(artNum){
+	att = document.createAttribute("class");
+	att.value = "clicked";
+	art[artNum].setAttributeNode(att);
+}
+
+window.onload = function(){
+	for (i in art){
+		art[i].addEventListener('click', function(){
+			liftArticle(i);
+		});
+	}
+}
